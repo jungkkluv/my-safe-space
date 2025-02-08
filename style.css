@@ -1,0 +1,126 @@
+/* إعدادات عامة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6); /* خلفية داكنة شفافة */
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 999;
+    text-align: center;
+}
+
+.popup img {
+    width: 150px; /* تحديد حجم الصورة بشكل صغير */
+    height: auto;
+    cursor: pointer;
+}
+
+/* باقي التنسيق كما هو */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.banner {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.stars img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.note-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#noteInput {
+    width: 300px;
+    height: 100px;
+    resize: none;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#doneButton {
+    margin-top: 10px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#doneButton:hover {
+    background-color: #e05599;
+}
+
+#notesContainer {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.note {
+    background-color: #ffcce6;
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.note p {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.trash {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+footer a img {
+    width: 50px;
+    height: 50px;
+}
